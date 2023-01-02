@@ -1,1 +1,1 @@
-export const API_URL = 'https://poke-z-6519.vercel.app/'
+export const API_URL = 'http://192.168.4.102:3001/'
