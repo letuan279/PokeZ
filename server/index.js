@@ -116,8 +116,8 @@ const getMessage = async (groupId, groupName) => {
     }
 }
 
-authorization = 'NDQ1NDExMzc0MzQ1MjI0MjAz.GIhtO-.Y_Y1pA117FGil3-ofFVSalK3K9d86qJ7-ADDT8'
-cookie = '_ga=GA1.2.1716287896.1614257463; __dcfduid=6230c68089d011edb1fc3f7a0ed6f3bf; __sdcfduid=6230c68189d011edb1fc3f7a0ed6f3bfbd10cd21a66f601b23aa5d3d6dfbbcd4058470d5d388ebcd64dc17ce12812cf9; _gcl_au=1.1.385296743.1672576367; _gid=GA1.2.1982119011.1672576368; __cfruid=62e1725860485881fd25a174f50f858b47714fa3-1672725584; OptanonConsent=isIABGlobal=false&datestamp=Tue+Jan+03+2023+12:59:45+GMT+0700+(Indochina+Time)&version=6.33.0&hosts=&landingPath=https://discord.com/&groups=C0001:1,C0002:1,C0003:1; _gat_UA-53577205-2=1; __cf_bm=14owkIK5s0_roeKgRn9pxxM9eZUUO1hmxllqYRtUz5c-1672725585-0-Ad1YOAHc67j5rlP5PDSRLC9aCogD2t5ow4/GYJGN6FqZFPtpnPY382pWE5VtBPhznKJoEoG1128UxxZ9bpOvkR5NFoqUlB2T20A+qUfZ6KTbXkrCR7/KJgshMc7LN7khjVJOqB9bLgAMGuKbvo5ywQM=; locale=en-US'
+authorization = 'NDQ1NDExMzc0MzQ1MjI0MjAz.GshXf2.5SF8c4TvwLrfnnnHwlUnKCB3EIL2YDeBhe7Y-g'
+cookie = '_ga=GA1.2.1716287896.1614257463; __dcfduid=6230c68089d011edb1fc3f7a0ed6f3bf; __sdcfduid=6230c68189d011edb1fc3f7a0ed6f3bfbd10cd21a66f601b23aa5d3d6dfbbcd4058470d5d388ebcd64dc17ce12812cf9; _gcl_au=1.1.385296743.1672576367; _gid=GA1.2.1982119011.1672576368; OptanonConsent=isIABGlobal=false&datestamp=Tue+Jan+03+2023+13:04:00+GMT+0700+(Indochina+Time)&version=6.33.0&hosts=&landingPath=https://discord.com/&groups=C0001:1,C0002:1,C0003:1; __cfruid=5b7898c62af7483785cdd1bdd7a91c7d9875152c-1672725840; __cf_bm=IpPGtx1ZN89KFPSKwrwrNprGIrl8vEK4rCuUuydKyd8-1672725840-0-ASCPzn/ltcXMOXrm1xIr0txlFaYMvhnPZigN2gC/YaUPTfF1h7Z1avIwelIUGVcPdhPbE64pw3C/ZjAPenBOoVBJe/WJSVCf8D90X998IFm7dr/YWq4BEMlCVuL+FHrEJK4ibNI9NEPZHeF/8KcdvTI=; locale=en-US'
 cookie_session = 'sessionid=bcs344oe453urx7rxsl5b54fdedhf33t; csrftoken=xUkp5QjeZUg97nmjNdeFxTHLnQmXX9D6Skl6fGw9kyl41lIFDtcxyCyix19Rt02g'
 
 app.post('/', async (req, res) => {
