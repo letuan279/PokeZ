@@ -106,13 +106,18 @@ function App() {
   );
 }
 
-function PokeCard({ data: { name, country, distance, cp, dsp, image, iv, location, lv, timeStart } }) {
+function PokeCard({ data: { id, name, country, distance, cp, dsp, image, iv, location, lv, timeStart } }) {
+  const handleCopy = () => {
+    navigator.clipboard.writeText(location)
+    message.success('Copy thành công')
+  }
+
   const title = <>
     <Image src={image}></Image>
     <span style={{ marginLeft: 10, marginRight: 10 }}>{name}</span>
     <Image src={country}></Image>
     <span style={{ marginLeft: 10, marginRight: 10 }}>{location}</span>
-    <Button style={{ marginLeft: 20 }}>Copy</Button>
+    <Button style={{ marginLeft: 20 }} onClick={handleCopy}>Copy</Button>
   </>
 
   return (
