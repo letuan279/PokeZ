@@ -42,7 +42,7 @@ const getPokeStatus = async (data) => {
                 "sec-fetch-site": "cross-site",
                 "sec-fetch-user": "?1",
                 "upgrade-insecure-requests": "1",
-                "cookie": "sessionid=bcs344oe453urx7rxsl5b54fdedhf33t; csrftoken=xUkp5QjeZUg97nmjNdeFxTHLnQmXX9D6Skl6fGw9kyl41lIFDtcxyCyix19Rt02g"
+                "cookie": cookie_session
             },
             "referrerPolicy": "no-referrer",
             "body": null,
@@ -65,7 +65,7 @@ const getMessage = async (groupId, groupName) => {
             "headers": {
                 "accept": "*/*",
                 "accept-language": "vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5",
-                "authorization": "NDQ1NDExMzc0MzQ1MjI0MjAz.GjyF2d.vUL4gB_nxtyL_iZ7rbPpuLdRLAQOW-QdqtOn8M",
+                "authorization": authorization,
                 "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
                 "sec-ch-ua-mobile": "?0",
                 "sec-ch-ua-platform": "\"Windows\"",
@@ -75,7 +75,7 @@ const getMessage = async (groupId, groupName) => {
                 "x-debug-options": "bugReporterEnabled",
                 "x-discord-locale": "en-US",
                 "x-super-properties": "eyJvcyI6IldpbmRvd3MiLCJicm93c2VyIjoiQ2hyb21lIiwiZGV2aWNlIjoiIiwic3lzdGVtX2xvY2FsZSI6ImVuLVVTIiwiYnJvd3Nlcl91c2VyX2FnZW50IjoiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzEwOC4wLjAuMCBTYWZhcmkvNTM3LjM2IiwiYnJvd3Nlcl92ZXJzaW9uIjoiMTA4LjAuMC4wIiwib3NfdmVyc2lvbiI6IjEwIiwicmVmZXJyZXIiOiJodHRwczovL3d3dy5nb29nbGUuY29tLyIsInJlZmVycmluZ19kb21haW4iOiJ3d3cuZ29vZ2xlLmNvbSIsInNlYXJjaF9lbmdpbmUiOiJnb29nbGUiLCJyZWZlcnJlcl9jdXJyZW50IjoiIiwicmVmZXJyaW5nX2RvbWFpbl9jdXJyZW50IjoiIiwicmVsZWFzZV9jaGFubmVsIjoic3RhYmxlIiwiY2xpZW50X2J1aWxkX251bWJlciI6MTY1NDg1LCJjbGllbnRfZXZlbnRfc291cmNlIjpudWxsfQ==",
-                "cookie": "_ga=GA1.2.1716287896.1614257463; __dcfduid=6230c68089d011edb1fc3f7a0ed6f3bf; __sdcfduid=6230c68189d011edb1fc3f7a0ed6f3bfbd10cd21a66f601b23aa5d3d6dfbbcd4058470d5d388ebcd64dc17ce12812cf9; _gcl_au=1.1.385296743.1672576367; _gid=GA1.2.1982119011.1672576368; OptanonConsent=isIABGlobal=false&datestamp=Mon+Jan+02+2023+14:18:08+GMT+0700+(Indochina+Time)&version=6.33.0&hosts=&landingPath=https://discord.com/&groups=C0001:1,C0002:1,C0003:1; __cfruid=86f9fbff954f7a3a5a960539e1f73615e44404ff-1672643888; __cf_bm=lDEjj4Bb5c5iQlpYjEfLBw5HE9Vy2cnI6YLh0BPWpUA-1672643953-0-AcYVP/abbqNGEmEF7E6XuDZET46vt2A0sPW3v7wbm8F7gjx7rtAx2j/OLRw3tIoY2tgCFdGUf71dC/nJMKskowNhDawTAcXxqEXPDM1DuPIuxfWsa4X5PPkXcnqTC7NQSuyisalAR/TcjRrZBPOiUTU=; locale=en-US",
+                "cookie": cookie,
                 "Referer": "https://discord.com/channels/252776251708801024/" + groupId,
                 "Referrer-Policy": "strict-origin-when-cross-origin"
             },
@@ -115,6 +115,10 @@ const getMessage = async (groupId, groupName) => {
         console.log(error);
     }
 }
+
+authorization = 'NDQ1NDExMzc0MzQ1MjI0MjAz.GIhtO-.Y_Y1pA117FGil3-ofFVSalK3K9d86qJ7-ADDT8'
+cookie = '_ga=GA1.2.1716287896.1614257463; __dcfduid=6230c68089d011edb1fc3f7a0ed6f3bf; __sdcfduid=6230c68189d011edb1fc3f7a0ed6f3bfbd10cd21a66f601b23aa5d3d6dfbbcd4058470d5d388ebcd64dc17ce12812cf9; _gcl_au=1.1.385296743.1672576367; _gid=GA1.2.1982119011.1672576368; __cfruid=62e1725860485881fd25a174f50f858b47714fa3-1672725584; OptanonConsent=isIABGlobal=false&datestamp=Tue+Jan+03+2023+12:59:45+GMT+0700+(Indochina+Time)&version=6.33.0&hosts=&landingPath=https://discord.com/&groups=C0001:1,C0002:1,C0003:1; _gat_UA-53577205-2=1; __cf_bm=14owkIK5s0_roeKgRn9pxxM9eZUUO1hmxllqYRtUz5c-1672725585-0-Ad1YOAHc67j5rlP5PDSRLC9aCogD2t5ow4/GYJGN6FqZFPtpnPY382pWE5VtBPhznKJoEoG1128UxxZ9bpOvkR5NFoqUlB2T20A+qUfZ6KTbXkrCR7/KJgshMc7LN7khjVJOqB9bLgAMGuKbvo5ywQM=; locale=en-US'
+cookie_session = 'sessionid=bcs344oe453urx7rxsl5b54fdedhf33t; csrftoken=xUkp5QjeZUg97nmjNdeFxTHLnQmXX9D6Skl6fGw9kyl41lIFDtcxyCyix19Rt02g'
 
 app.post('/', async (req, res) => {
     console.log("hehe");
